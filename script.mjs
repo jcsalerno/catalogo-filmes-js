@@ -14,9 +14,12 @@ async function searchButtonClickHandler() {
     const response = await fetch(url);
     const data = await response.json();
     console.log("data: ", data);
+    if (data.Error) {
+      throw new Error("Filme não encontrado");
+    }
     overlay.classList.add("open");
   } catch (error) {
-    console.error(error.message);
+    notie.alert({ type: "error", text: error.message });
   }
 }
 
