@@ -19,6 +19,10 @@ body {
   min-height: 100dvb;
 }
 
+button {
+  cursor: pointer;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -50,9 +54,7 @@ header > h2 > i {
   display: flex;
   align-items: center;
 }
-#search-button {
-  width: 5%;
-}
+
 .movie-year-wrapper > input {
   max-width: 5rem;
 }
@@ -75,6 +77,8 @@ header > h2 > i {
 }
 
 #search-button {
+  cursor: pointer;
+  width: 5%;
   all: unset;
   padding: 0.3rem;
   border: 2px solid var(--ligthest-color);
