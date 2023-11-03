@@ -1,0 +1,34 @@
+:root {
+  --primary-color: #29335c;
+  --light-primary: #3f4f8d;
+  --ligthest-color: #e9ebd5;
+  --secondary-color: #774936;
+  --light-secondary: #c08972;
+}
+
+#modal-overlay {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-background {
+  background-color: var(--light-primary);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+#modal-container {
+  z-index: 1;
+  background-color: var(--ligthest-color);
+  padding: 1rem 3rem;
+  border-radius: 10px;
+}
