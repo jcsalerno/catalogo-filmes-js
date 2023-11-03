@@ -13,6 +13,12 @@
   font-family: sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvb;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -78,4 +84,12 @@ header > h2 > i {
 #search-button:focus,
 #search-button:hover {
   background-color: var(--light-primary);
+}
+
+main {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: var(--ligthest-color);
+  color: var(--primary-color);
+  flex-grow: 1;
 }
